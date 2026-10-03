@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f1eb">
+  <meta name="description" content="نسخه قابل ارزیابی سامانه ثبت و کارشناسی اسناد املاک">
+  <title>کاتب | سامانه ثبت و کارشناسی املاک</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+  <div class="app-shell">
+    <header class="topbar glass">
+      <a class="brand" href="#" aria-label="کاتب، صفحه اصلی">
+        <span class="brand-mark">ک</span>
+        <span><strong>کاتب</strong><small>شبکه ثبت امن املاک</small></span>
+      </a>
+      <time class="date-pill">۱۰ مهر ۱۴۰۵، جمعه</time>
+      <div class="top-actions">
+        <label class="role-switch" title="نقش نمایشی">
+          <span>نقش</span>
+          <select id="roleSelect" aria-label="انتخاب نقش نمایشی">
+            <option value="applicant">متقاضی</option>
+            <option value="expert">کارشناس</option>
+            <option value="admin">مدیریت مرکزی</option>
+          </select>
+        </label>
+        <button class="icon-button" id="notificationButton" aria-label="اعلان‌ها"><span class="notification-dot"></span><span data-icon="bell"></span></button>
+        <button class="profile"><span class="avatar">س</span><span><b>سارا احمدی</b><small>متقاضی</small></span></button>
+      </div>
+    </header>
+
+    <aside class="sidebar glass" aria-label="راهبری اصلی">
+      <button class="nav-item active" data-view="home"><span data-icon="home"></span><b>خانه</b></button>
+      <button class="nav-item" data-view="new-case"><span data-icon="sparkle"></span><b>درخواست</b></button>
+      <button class="nav-item" data-view="tracking"><span data-icon="tracking"></span><b>پیگیری</b></button>
+      <button class="nav-item" data-view="expert"><span data-icon="work"></span><b>میز کار</b></button>
+      <button class="nav-item" data-view="admin"><span data-icon="dashboard"></span><b>مدیریت</b></button>
+    </aside>
+
+    <main id="main" class="main-content" aria-live="polite"></main>
+  </div>
+  <div id="toastRegion" class="toast-region" aria-live="polite"></div>
+  <div id="modalRoot"></div>
+  <script src="app.js"></script>
+</body>
+</html>
